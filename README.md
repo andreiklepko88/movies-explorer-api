@@ -11,4 +11,4 @@ Backend for Yandex Praktikum diploma project
 
 IP 84.201.140.189
 
-Backend https://api.mestoproject-klepkoas.nomoredomains.xyz
+Backend https://api.bitfilms-andreikodev.nomoreparties.sbs
