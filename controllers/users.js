@@ -109,7 +109,7 @@ const updateProfile = (req, res, next) => {
 const logOut = (req, res) => {
   res.status(OK_CODE)
     .clearCookie('jwt', {
-      sameSite: true,
+      sameSite: 'none',
     })
     .send({ message: 'Logged out successfully' });
 };
