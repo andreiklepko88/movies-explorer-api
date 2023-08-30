@@ -18,7 +18,7 @@ app.use(helmet());
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'https://api.bitfilms-andreikodev.nomoreparties.sbs',
+  origin: 'https://bitfilms-andreikodev.nomoreparties.sbs',
   credentials: true,
 }));
 
