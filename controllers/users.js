@@ -69,7 +69,8 @@ const login = (req, res, next) => {
           res.cookie('jwt', token, {
             maxAge: 604800000,
             httpOnly: true,
-            sameSite: true,
+            sameSite: 'none',
+            secure: true,
           });
           return res.status(OK_CODE).send({ token });
         });
@@ -108,7 +109,8 @@ const updateProfile = (req, res, next) => {
 const logOut = (req, res) => {
   res.status(OK_CODE)
     .clearCookie('jwt', {
-      sameSite: true,
+      sameSite: 'none',
+      secure: true,
     })
     .send({ message: 'Logged out successfully' });
 };
