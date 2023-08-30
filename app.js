@@ -17,10 +17,12 @@ const { PORT = 3000, SERVER_ADDRESS = 'mongodb://127.0.0.1:27017/bitfilmsdb', NO
 app.use(helmet());
 app.use(cookieParser());
 app.use(bodyParser.json());
-app.use(cors({
-  origin: 'https://bitfilms-andreikodev.nomoreparties.sbs',
-  credentials: true,
-}));
+app.use(cors());
+
+// {
+//   origin: 'https://bitfilms-andreikodev.nomoreparties.sbs',
+//   credentials: true,
+// }
 
 mongoose.connect(NODE_ENV === 'production' ? SERVER_ADDRESS : 'mongodb://127.0.0.1:27017/bitfilmsdb', { autoIndex: true })
   .then(() => {
