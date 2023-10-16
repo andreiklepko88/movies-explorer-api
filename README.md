@@ -5,10 +5,25 @@ Backend for Yandex Praktikum diploma project
 
 Данная работа является результатом дипломного проекта курса "Веб-разработчик" [Яндекс-Практикума](https://practicum.yandex.ru/ "Сайт Яндекс-Практикума")
 
-Адрес репозитория: https://github.com/andreiklepko88/movies-explorer-api.git
+Стек: MongoDB, Express.js, Njinx, Git, JSON Web Token (JWT), NodeJS.
+
+Адрес репозитория: https://github.com/andreiklepko88/movies-explorer-api
 
 ## Ссылки на проект
 
-IP 84.201.140.189
+IP 51.250.102.29
 
 Backend https://api.bitfilms-andreikodev.nomoreparties.sbs
+
+## Директории
+
+`/routes` — папка с файлами роутера  
+`/controllers` — папка с файлами контроллеров пользователя и карточки   
+`/models` — папка с файлами описания схем пользователя и карточки  
+  
+Остальные директории вспомогательные, созданы по необходимости разработчиком
+
+## Запуск проекта
+
+`npm run start` — запускает сервер   
+`npm run dev` — запускает сервер с hot-reload
